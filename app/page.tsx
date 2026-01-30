@@ -48,7 +48,6 @@ export default function Home() {
                   To-Do list
                 </div>
 
-                {/* Input + Add */}
                 <div className="flex flex-row gap-[6px]">
                   <input
                     type="text"
@@ -66,7 +65,6 @@ export default function Home() {
                   </Button>
                 </div>
 
-                {/* Filter buttons */}
                 <div className="flex flex-row gap-[6px]">
                   <Button
                     onClick={() => setFilter("all")}
@@ -100,7 +98,6 @@ export default function Home() {
                   </Button>
                 </div>
 
-                {/* Tasks list with checkbox */}
                 <div className="flex flex-col gap-2 mt-4">
                   {filteredTasks.length === 0 ? (
                     <div className="text-[14px] text-[#6b7280] flex justify-center">
@@ -141,7 +138,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Footer */}
             <div className="flex flex-row gap-[4px] justify-center mb-4">
               <div className="text-[12px] text-[#6b7280]">Powered by</div>
               <a
